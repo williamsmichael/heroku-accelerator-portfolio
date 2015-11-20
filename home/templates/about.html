@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+  {% include "base_metadata.html" %}
+  {% include "base_css_links.html" %}
+
+  {% block css_links %}
+    <!-- custom styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style_about.css" %} ">
+
+  {% endblock %}
+
+    {% block title %} About {% endblock %}
+{% endblock %}
+
+{% block navbar_subtext %} About {% endblock %}
+
+{% block body %}
+  <div class="wrapper">
+  <header>
+    <img src="{% static "images/profile_300px.jpg" %}" alt="profile picture NL" />
+  </header>
+  <article>
+    <section id="about">
+      <p>making Peoples Lives Easier</p>
+
+      <p>Hi, my name is Michael Williams and I am a python-based developer with a background in finances and healthcare. When I am not coding, I enjoy volunteering, exercising, exploring Oregon, and traveling. Through professional development, volunteering, and consulting roles, my mantra as a programmer is to help organizations use technology to solve real business problems.</p>
+      <blockquote>
+        <p>Find a way to learn something new each day</p>
+      </blockquote>
+    </section>
+    <section id="competencies">
+      <h2>Technical Competencies</h2>
+      <h4>Scripting and Programming Languages, Software, Systems, Best Practices</h4>
+      <ul>
+        <li>
+          <h4>Proficient</h4>
+          <ul>
+            <li>Python, Django, HTML, CSS, JavaScript, jQuery, git, Photoshop, Responsive Design, Terminal</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Novice</h4>
+          <ul>
+            <li>Bootstrap, WordPress, AJAX, Sass, VB, SQL, Accessibility, Email Marketing, UX, SEO</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Intermediate</h4>
+          <ul>
+            <li>VBA, Microsoft Office Suite, PC and Mac OS, Sketchup</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Other Tools</h4>
+          <ul>
+            <li>Chrome Developer, Sublime, MAMP, VB Express, Cyberduck, PyCharm, JSHint</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </article>
+  </div>
+
+{% endblock %}
+
+{% block js_scripts %}
+  {% include "base_js_scripts.html" %}
+
+{% endblock %}

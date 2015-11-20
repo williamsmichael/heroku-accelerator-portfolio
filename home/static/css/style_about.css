@@ -1,0 +1,91 @@
+/* layout */
+body {
+  background-color:#eee;
+  color: #333;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  margin: 75px 15% 25px;
+}
+header {
+  width: 100%;
+}
+section, aside {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 25px 10%;
+  margin: 25px 0;
+  box-shadow: 5px 5px 15px #777;
+}
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover, a:active, a.selected {
+  color: #ccc;
+  text-decoration: overline;
+}
+h1 {
+  color:#bbb;
+  font-size: 2em;
+}
+header img {
+  border-radius: 20px;
+  width: 75%;
+  box-shadow: 5px 5px 15px #333;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+p:nth-child(1)::first-letter {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 4em;
+  margin-right: 0.03em;
+}
+
+/* about.html section introduction */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  font-family: sans-serif;
+}
+blockquote p {
+  display: inline;
+}
+
+/* about.html section technical competencies */
+ul:nth-child(3) {
+  padding-left: 0;
+}
+li {
+  color: #999;
+  list-style: none;
+}
+li h4 {
+  color: #333;
+}
+
+@media screen and (min-width: 800px) {
+  header img {
+    display: inherit;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header img {
+    display: inherit;
+    width: 30%;
+  }
+}
