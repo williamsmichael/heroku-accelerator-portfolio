@@ -16,6 +16,10 @@ small {
 /* ------------------------------------------------------------media queries*/
 @media (max-width: 550px) {
 	img[alt="twitter icon to connect"] {
-		width: 50px;
+		width: 30px;
+    margin-bottom: 25px;
 	}
+  footer p {
+    text-align: center;
+  }
 }
