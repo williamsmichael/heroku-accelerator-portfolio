@@ -11,7 +11,7 @@ var imgMax = 35;
 // var imgSrc = "../static/images/pdxcg_" + imgNum + ".jpg";
 
 // Sets the interval for the loop infinitely
-setInterval(function () {changeImage();}, 20000);
+setInterval(function () {changeImage();}, 5000);
 
 // Iterates through images in the folder
 function changeImage() {
