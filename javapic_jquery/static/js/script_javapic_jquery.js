@@ -7,7 +7,7 @@ var imgNum = 1;
 var imgMax = 35;
 
 // Sets the interval for the loop infinitely (standard js function)
-setInterval(function () {changeImage();}, 20000);
+setInterval(function () {changeImage();}, 5000);
 
 // Iterates through images in the folder
 function changeImage() {
