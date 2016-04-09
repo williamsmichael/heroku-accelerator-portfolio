@@ -64,7 +64,11 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+i {
+  color: green;
+}
 
+/* media queries */
 @media screen and (min-width: 800px) {
   header img {
     display: inherit;
